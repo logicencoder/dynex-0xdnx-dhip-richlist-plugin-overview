@@ -44,7 +44,31 @@ Shortcode **`[0xdnxdhip_richlist]`** embeds stats, table, transactions, and refr
 
 ## WordPress admin
 
-Top-level **0xDNXDHIP** menu: live preview, row limits, snapshot path settings, database maintenance, transaction browser, CSV export, API key generation, and snapshot status — operators manage display and storage from wp-admin without editing PHP.
+Top-level **0xDNXDHIP** menu in wp-admin — operators manage display, data, and exports without editing PHP.
+
+### Admin dashboard
+
+Headline stats, **Refresh Data**, and a preview of recent transactions with a link to the full history.
+
+![wp-admin dashboard — holder stats and recent transaction preview](assets/admin-dashboard.png)
+
+### Database tools
+
+Per-table row counts and sizes across holders, transactions, stats, daily snapshots, and history tables.
+
+![Database tools — table row counts and sizes](assets/database-tools.png)
+
+### Database maintenance
+
+Deposit vs withdrawal breakdown, transaction date range, and **duplicate address check** to confirm holder rows are unique.
+
+![Database maintenance — transaction statistics and duplicate address check](assets/database-maintenance.png)
+
+### Transaction browser
+
+Paginated full history with **Export CSV**, Etherscan-linked addresses and txids, and deposit/withdraw badges.
+
+![Transaction browser — full history with CSV export](assets/transaction-browser.png)
 
 Private code: [dynex-0xdnx-dhip-richlist-plugin](https://github.com/logicencoder/dynex-0xdnx-dhip-richlist-plugin) · indexer [dynex-0xdnx-dhip-richlist-monitor](https://github.com/logicencoder/dynex-0xdnx-dhip-richlist-monitor)
 
