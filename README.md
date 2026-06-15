@@ -22,19 +22,19 @@
 
 Above the table, a **stats band** shows pool totals — holder count, aggregate 0xDNX in DHIP, top-holder concentration metrics, whale counts, and **24h deposit/withdraw activity**. Percentages in the table are easier to read when the denominator is visible in the same glance.
 
-![Summary statistics — holders, pool totals, whales, and 24h activity](assets/summary-stats.png)
+<img src="assets/summary-stats.png" alt="Summary statistics — holders, pool totals, whales, and 24h activity" width="860" />
 
 ## Recent transactions
 
 A **recent activity panel** lists deposits and withdrawals: time, direction, addresses, amount, and transaction links. Rankings show *state*; this panel shows *what changed* — large entries, new wallets, exits.
 
-![Recent transactions — deposits and withdrawals with Etherscan links](assets/recent-transactions.png)
+<img src="assets/recent-transactions.png" alt="Recent transactions — deposits and withdrawals with Etherscan links" width="860" />
 
 ## Ranked holder table
 
 The main view is a **ranked table**: position, address (truncated, linked to Etherscan), formatted balance, and **exact percentage of total 0xDNX in the pool**. Default page size is configurable (typically 30 rows); **Load more** fetches the next ranks without reloading the page. The table auto-refreshes on an interval so rankings stay current during active trading days.
 
-![Ranked holder table — balance and pool percentage by address](assets/holder-rankings.png)
+<img src="assets/holder-rankings.png" alt="Ranked holder table — balance and pool percentage by address" width="860" />
 
 ## Live page and search engines
 
