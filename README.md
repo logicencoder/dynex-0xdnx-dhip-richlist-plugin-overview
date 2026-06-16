@@ -201,4 +201,41 @@ See [REPOS.md](REPOS.md).
 
 ---
 
+## Feature examples (two per capability)
+
+#### Richlist shortcode embed
+1. You add `[0xdnxdhip_richlist]` to a page and visitors see wrapped 0xDNX DHIP v2 holder rankings in your site styling.
+2. You override row limit and section toggles via shortcode attributes for a “top 10 only” embed beside an article.
+
+#### Ranked holder table
+1. You scroll rank, truncated address, balance, and percentage of total pool 0xDNX in the public table.
+2. You click an address link and jump to Etherscan to verify the wallet on-chain.
+
+#### Summary stats and recent flows
+1. You read the stats band for total 0xDNX in the pool and holder count before interpreting table percentages.
+2. You scan recent deposits and withdrawals with amounts, types, and block references when a whale move hits Twitter.
+
+#### Load more and auto-refresh
+1. You click **Load more** and the table appends the next chunk of holders without reloading the page.
+2. You leave the page open and ranks refresh on your configured timer — updated ranks without pressing F5.
+
+#### Mobile layout and crawler snapshot
+1. You open the richlist on a phone and holder rows stack as readable cards instead of a clipped wide table.
+2. Search visitors receive pre-rendered HTML with structured dataset markup while normal browsers get the live AJAX interface.
+
+#### 0xDNXDHIP admin overview (operator)
+1. You open the **0xDNXDHIP** menu and preview data health before answering a community question about pool share.
+2. You jump to **Settings** or **Transactions** when ingest looks stale after a monitor restart.
+
+#### Settings and API key (operator)
+1. You regenerate the REST API key in **Settings** and mirror the new value in the Python monitor environment.
+2. You tune display limit, refresh interval, and snapshot path without redeploying PHP.
+
+#### Database tools and export (operator)
+1. You run duplicate-address detection after a bad ingest and remove conflicting holder rows from wp-admin.
+2. You export transactions to **CSV** for incident records without querying the database manually.
+
+
+---
+
 **Made by [Logic Encoder](https://logicencoder.com)** · [GitHub](https://github.com/logicencoder) · [Contact](https://logicencoder.com/contact/)
