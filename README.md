@@ -4,7 +4,7 @@
 
 **Live holder rankings** for Wrapped Dynex (0xDNX) in the DHIP v2 pool on Ethereum — who holds how much, what share of the pool they represent, and what moved recently. Holders, researchers, and community members use [logicencoder.com/0xdnx-dhip-v2-richlist/](https://logicencoder.com/0xdnx-dhip-v2-richlist/) to track concentration and whale activity without running an indexer or parsing explorer pages line by line.
 
-The hero screenshot shows the full public page in one view: **summary statistics** across the top, **recent deposits and withdrawals** in the middle band, and the **ranked holder table** below with load-more pagination. Dark Mulish typography keeps long addresses readable; live refresh runs on a timer so rankings update during active trading days without manual reload.
+Pool share shifts when large wallets deposit or exit — a static export is wrong within hours. A Python indexer watches the DHIP contract, recalculates ranks and percentages, and pushes updates into WordPress; the public page polls on a timer so stats, recent flows, and the holder table stay aligned during active days without manual reload or opening holder tabs on a block explorer.
 
 ## Tech stack
 
