@@ -167,14 +167,14 @@ Changes apply on the next page load; live visitors pick up new intervals and pan
 
 ### Database tools
 
-**Database tools** lists every custom table — holders, transactions, stats, daily snapshots, balance/rank/percentage history, significant moves, and more — with **row counts** and **storage size**. When the public table feels slow or stats look stale, check here first: a zero row count on `holders` means ingest never landed, not a front-end bug.
+**Database tools** is the wp-admin health screen for the richlist store: each dataset shows **row counts** and **storage size** so you can see whether ingest is keeping up before blaming the public page. Empty holder counts usually mean the monitor push has not landed yet — not a front-end bug.
 
 The same screen includes **Database maintenance** actions:
 
 - **Duplicate address check** — lists any holder rows that share an address (would skew percentages); **Remove duplicates** keeps the highest-balance row per address.
 - **Clean old transactions** — deletes transaction records older than 30 days to cap database growth.
-- **Optimize database tables** — runs `OPTIMIZE TABLE` across all plugin tables.
-- **Backup database** — writes a timestamped SQL dump to `wp-content/backups/` with a download link.
+- **Optimize database** — compacts plugin storage after heavy imports.
+- **Backup database** — downloads a timestamped SQL dump from wp-admin.
 
 Run duplicate check after a bad import or indexer bug before announcing rankings publicly.
 
