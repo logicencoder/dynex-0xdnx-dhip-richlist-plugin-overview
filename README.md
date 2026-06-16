@@ -24,7 +24,7 @@ Pool share shifts when large wallets deposit or exit — a static export is wron
 
 The **stats band** is the denominator for every percentage in the rankings. Without total pool supply and holder counts in view, an isolated “X% of pool” figure is hard to interpret; with the band, concentration and flow metrics share the same baseline. The band refreshes on the same interval as the table so stats and rows never disagree after a large move.
 
-Each stat box is computed from the latest holder rows and transaction history in WordPress — not re-derived on every page view from chain RPC:
+Each stat box is computed from the latest holder rows and transaction history stored in WordPress — without chain RPC on every page view:
 
 | Stat | What it tells you |
 |------|-------------------|
@@ -167,7 +167,7 @@ Changes apply on the next page load; live visitors pick up new intervals and pan
 
 ### Database tools
 
-**Database tools** is the wp-admin health screen for the richlist store: each dataset shows **row counts** and **storage size** so you can see whether ingest is keeping up before blaming the public page. Empty holder counts usually mean the monitor push has not landed yet — not a front-end bug.
+**Database tools** is the wp-admin health screen for the richlist store: each dataset shows **row counts** and **storage size** so you can see whether ingest is keeping up before blaming the public page. Empty holder counts usually mean the monitor push has not landed yet — check ingest first.
 
 The same screen includes **Database maintenance** actions:
 
@@ -189,7 +189,7 @@ The **transaction browser** is the full paginated history — every deposit and 
 - **Export CSV** for spreadsheets or sharing with analysts.
 - **Etherscan-linked** addresses and transaction IDs.
 - **Deposit / withdraw badges** per row.
-- **Pagination** through the full dataset when the dashboard preview is not enough.
+- **Pagination** through the full dataset when you need more rows than the dashboard preview shows.
 
 ![Transaction browser — full history with CSV export](assets/transaction-browser.png)
 
