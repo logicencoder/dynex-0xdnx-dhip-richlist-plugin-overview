@@ -22,7 +22,7 @@ Pool share shifts when large wallets deposit or exit — a static export is wron
 
 ## Summary statistics
 
-The **stats band** above the table is the denominator for every percentage in the rankings. Without it, “3.42% of pool” is hard to interpret; with it, you see the whole picture at a glance. The band refreshes on the same interval as the table so stats and rows never disagree after a large move.
+The **stats band** is the denominator for every percentage in the rankings. Without total pool supply and holder counts in view, an isolated “X% of pool” figure is hard to interpret; with the band, concentration and flow metrics share the same baseline. The band refreshes on the same interval as the table so stats and rows never disagree after a large move.
 
 Each stat box is computed from the latest holder rows and transaction history in WordPress — not re-derived on every page view from chain RPC:
 
@@ -45,7 +45,7 @@ Whale and small-holder thresholds are fixed in the plugin logic (≥1% and <0.1%
 
 ## Recent transactions
 
-Rankings show *who holds now*; the **recent activity panel** shows *what changed*. Each row is a deposit into or withdrawal from the DHIP pool:
+Rankings answer *who holds now*; the **recent activity panel** answers *what changed*. Each row is a deposit into or withdrawal from the DHIP pool:
 
 - **Time** — when the transfer landed on-chain.
 - **Direction** — deposit (green) vs withdraw (red) badge.
@@ -56,7 +56,7 @@ Rankings show *who holds now*; the **recent activity panel** shows *what changed
 
 The panel row count follows wp-admin **Number of transactions to show** (default 5, max 20 in settings UI). During live refresh, new rows can appear without reloading the page when the poll detects a newer transaction timestamp than the one the browser last saw.
 
-Use this panel to spot a single large deposit that will appear in the table on the next refresh, or to confirm a known wallet exited the pool. Researchers often keep it open beside the rankings during governance or listing events.
+A large deposit in this panel usually climbs the ranked table on the next refresh; a withdrawal confirms a wallet exited the pool. Researchers often watch both panels during governance or listing events.
 
 <img src="assets/recent-transactions.png" alt="Recent transactions — deposits and withdrawals with Etherscan links" width="860" />
 
@@ -144,7 +144,7 @@ Top-level **0xDNXDHIP** menu in wp-admin — operators manage display settings, 
 
 ### Admin dashboard
 
-The **dashboard** home shows headline holder stats at a glance, a **Refresh Data** button to trigger a manual refresh event after deploys, and a **preview of recent transactions** with a link to the full history browser. Use it after an indexer restart to confirm row counts moved and the last ingest timestamp is fresh.
+The **dashboard** home surfaces headline holder stats, a **Refresh Data** button to trigger a manual refresh event after deploys, and a **preview of recent transactions** with a link to the full history browser. After an indexer restart, confirm row counts moved and the last ingest timestamp is fresh before announcing rankings.
 
 ![wp-admin dashboard — holder stats and recent transaction preview](assets/admin-dashboard.png)
 
