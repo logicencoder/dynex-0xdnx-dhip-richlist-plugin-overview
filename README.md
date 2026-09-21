@@ -201,7 +201,7 @@ See [REPOS.md](REPOS.md).
 
 ---
 
-## Feature examples (two per capability)
+## Operator workflows
 
 #### Richlist shortcode embed
 1. You add `[0xdnxdhip_richlist]` to a page and visitors see wrapped 0xDNX DHIP v2 holder rankings in your site styling.
