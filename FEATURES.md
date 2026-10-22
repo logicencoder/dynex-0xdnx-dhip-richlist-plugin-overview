@@ -17,17 +17,15 @@
 - Links to on-chain proof
 
 ## Live updates
-- AJAX refresh without full page reload
-- Admin-configurable refresh interval
+- Refresh the displayed activity without repeatedly reloading the page
+- Adjust update preferences from administration
 
 ## SEO
-- Optional static HTML snapshot for crawlers
-- Schema.org JSON-LD embedded in snapshot
-- Bot detection (Google, Bing, common crawlers)
-- Optional reverse-DNS verification for major bots
+- Search-friendly presentation of the published richlist
+- Structured-data support for the site's discovery workflow
 
 ## Administration (site owner)
-- API key for the Python monitor
-- Display and formatting options
-- Snapshot path and status
-- Database maintenance tools
+- Review the connection and published-view status
+- Adjust display and formatting preferences
+- Inspect transaction records when a question needs more detail
+- Use maintenance tools to keep the published information useful
