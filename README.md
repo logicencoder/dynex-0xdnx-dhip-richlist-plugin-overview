@@ -35,7 +35,7 @@ Embedding support gives the site owner a way to place the richlist within the si
 
 ## Operate and maintain the view
 
-Administrator panels cover status, settings, transaction inspection and maintenance tools. These support checking whether the published view is healthy and investigating a data question. Two administrator captures are currently narrow and should be replaced with readable originals.
+Administrator panels cover status, settings, transaction inspection and maintenance tools. These support checking whether the published view is healthy and investigating a data question.
 
 ![0xDNX DHIP Richlist — Operate and maintain the view](assets/admin-dashboard.png)
 
